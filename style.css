@@ -1,0 +1,6 @@
+.sidebar {
+  background: #ed1e79;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  width: 260px;
+}
