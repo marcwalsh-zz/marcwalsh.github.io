@@ -1,10 +1,13 @@
-.sidebar {
- 	background: #ed1e79;
- 	-webkit-overflow-scrolling: touch;
- 	-ms-overflow-style: none;
- 	width: 20%;
- 	height:100%;
-
- }
-
- 
+#sidebar {
+    width:20%;
+    float:left;
+    background-color:#ED1E79;
+    color:white;
+}
+    .logo {
+        text-align:center;
+        left:50%;
+        right:50%;
+        border-left:-8em;
+        border-right:-8em;
+    }
