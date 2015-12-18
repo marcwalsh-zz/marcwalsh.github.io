@@ -1,6 +1,18 @@
-.sidebar {
-  background: #ed1e79;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: none;
-  width: 260px;
+.navbaraside {
+ 	background: #ed1e79;
+ 	-webkit-overflow-scrolling: touch;
+ 	-ms-overflow-style: none;
+ 	width: 260px;
+ 	max-width: 400px
+
 }
+
+.navbar {
+ 	height: 100vh;
+ 	position: relative;
+ 	overflow-y: auto;
+ }
+
+ .navbarcontent {
+ 	position: relative;
+ }
