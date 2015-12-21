@@ -17,7 +17,8 @@ body {
 }
 
 h1 {
-	font-family: 'Conv_Kenzo';
+	font-family: 'Conv_Kenzo Regular';
+	color: white;
 	margin-left: 10px;
 	margin-top: 10px;
 }
