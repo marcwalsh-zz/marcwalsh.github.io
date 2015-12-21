@@ -1,34 +1,15 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Marc's First VR Test</title>
-    <meta name="description" content="Testing VR using AFrame">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="/scripts/aframe.min.js"></script>
+<head>
+  <title>Edge Home Page Test</title>
+  <link rel="stylesheet" type="text/css" href="http://marcwalsh.github.io/style.css">
+</head>
+<body>
 
-  </head>
-  <body>
-    
-    <div id="sidebar"></div>
+<div id="sidebar"> TESTING </div>
 
-    <a-scene>
+<iframe src="home-vr.html" height="100vr"></iframe>
 
-      <a-camera fov="80" near="0.1" wasd-controls-enabled="false" cursor-visible="false"></a-camera>
 
-      <a-entity id="logo" position="0 0.15 -1" scale=".5 .5 .5">
-
-        <a-image id="webvr" src="/images/edgewhite.png" width="2.02" height="1" opacity="0.75">
-          <a-animation attribute="scale" from="1 0 1" to="0.75 0.75 0.75" begin="1500" dur="200" fill="both" easing="ease-out"></a-animation>
-          <a-animation attribute="position" from="0 -3.5 0" to="0 0 0" begin="1000" dur="1000" fill="both" easing="ease-out"></a-animation>
-        </a-image>
-
-      </a-entity>
-
-      	<a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
-		<a-light type="ambient" color="#fff"></a-light>
-      	<a-videosphere src="o2360.mp4" autoplay="true" loop="true"></a-videosphere>
-		<a-sky color="#000000"></a-sky>
-    </a-scene>
-  </body>
+</body>
 </html>
