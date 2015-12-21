@@ -1,13 +1,8 @@
 #sidebar {
+    float: left;
+    background:#ED1E79;
     width:20%;
-    float:left;
-    background-color:#ED1E79;
-    color:white;
+
 }
-    .logo {
-        text-align:center;
-        left:50%;
-        right:50%;
-        border-left:-8em;
-        border-right:-8em;
-    }
+
+
