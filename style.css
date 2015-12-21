@@ -22,7 +22,16 @@ h1 {
 	font-size: 30pt;
 	margin-left: 10px;
 	margin-top: 10px;
-	letter-spacing: 2px;
+	letter-spacing: 1.2px;
+}
+
+nav {
+	font-family: 'Conv_Kenzo Regular';
+	color:#FCEA22;
+	font-size: 16pt;
+	margin-left: 10px;
+	line-height: 20pt;
+	letter-spacing: 1px;
 }
 
 
@@ -32,7 +41,7 @@ h1 {
     width: 20%;
     height: 100vh;
     min-width: 200px;
-    z-index: 2
+    z-index: 2;
 
 }
 
