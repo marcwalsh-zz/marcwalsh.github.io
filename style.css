@@ -13,7 +13,7 @@ body {
     float: left;
     background:#ED1E79;
     width: 20%;
-    height: 100%;
+    height: 100vh;
 
 }
 
@@ -24,7 +24,7 @@ body {
 	left: 0;
 	right: 0;
 	overflow:hidden;
-	
+
 }
 
 
