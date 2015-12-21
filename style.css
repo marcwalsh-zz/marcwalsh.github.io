@@ -1,3 +1,14 @@
+html {
+	min-height: 100% 
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+
 #sidebar {
     float: left;
     background:#ED1E79;
@@ -6,10 +17,15 @@
 
 }
 
-body {
-	margin: 0px;
-	padding: 0px;
-	height: 100%;
+#contentwrap {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+	
 }
+
 
 
