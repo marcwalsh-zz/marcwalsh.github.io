@@ -13,6 +13,7 @@ body {
     float: left;
     background:#ED1E79;
     width: 20%;
+    min-width: 200px
     height: 100vh;
     z-index: 2
 
