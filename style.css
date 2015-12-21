@@ -34,6 +34,24 @@ nav {
 	letter-spacing: 1px;
 }
 
+a {
+	font-family: 'Conv_Kenzo Regular';
+	color:#FCEA22;
+	font-size: 16pt;
+	margin-left: 10px;
+	line-height: 20pt;
+	letter-spacing: 1px;
+}
+
+li {
+	font-family: 'Conv_Kenzo Regular';
+	color:#FCEA22;
+	font-size: 16pt;
+	margin-left: 10px;
+	line-height: 20pt;
+	letter-spacing: 1px;
+}
+
 
 #sidebar {
     float: left;
