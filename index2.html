@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Marc's First VR Test</title>
+    <title>Edge Productions</title>
     <meta name="description" content="Testing VR using AFrame">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="/scripts/aframe.min.js"></script>
@@ -10,10 +10,22 @@
   </head>
   <body>
 
-    <a-scene>
+<a-scene>
 
+<!-- Camera View-->
       <a-camera fov="80" near="0.1" wasd-controls-enabled="false" cursor-visible="false"></a-camera>
 
+<!-- On Screen Cursor -->
+
+      <a-entity cursor="fuse: true; maxDistance: 30; timeout: 500"
+          position="0 0 -30"
+          geometry="primitive: ring"
+          material="color: white; shader: flat">
+      </a-entity>
+
+    <a-scene>
+
+<!-- Edge Logo -->
       <a-entity id="logo" position="0 0.15 -1" scale=".5 .5 .5">
 
         <a-image id="webvr" src="/images/edgewhite.png" width="2.02" height="1" opacity="0.75">
@@ -23,7 +35,9 @@
 
       </a-entity>
 
-            <a-entity position="-3.5 0 -4" scale=".5 .5 .5" rotation="0 60 0">
+<!-- Info Menu -->
+
+      <a-entity position="-3.5 1.8 -4" scale=".5 .5 .5" rotation="0 60 0">
 
         <a-cube width="6" height="1" depth=".05" translate="0 -0.5 0" color="#ED1E79">
           <a-animation attribute="rotation" from="-90 0 0" to="0 0 0" dur="1000" fill="forwards"></a-animation>
@@ -48,10 +62,14 @@
 
       </a-entity>
 
-      	<a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
-		<a-light type="ambient" color="#fff"></a-light>
-      	<a-videosphere src="o2360.mp4" autoplay="true" loop="true"></a-videosphere>
+<!-- Lighting -->
+      <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
+		  <a-light type="ambient" color="#fff"></a-light>
+
+<!-- Video and Background -->
+    <a-videosphere src="o2360.mp4" autoplay="true" loop="true"></a-videosphere>
 		<a-sky color="#000000"></a-sky>
+
     </a-scene>
   </body>
 </html>
