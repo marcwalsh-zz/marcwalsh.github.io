@@ -13,15 +13,7 @@
 <a-scene>
 
 <!-- Camera View-->
-      <a-camera fov="80" near="0.1" wasd-controls-enabled="false" cursor-visible="false"></a-camera>
-
-<!-- On Screen Cursor -->
-
-      <a-entity cursor="fuse: true; maxDistance: 30; timeout: 500"
-          position="0 0 -30"
-          geometry="primitive: ring"
-          material="color: white; shader: flat">
-      </a-entity>
+      <a-camera fov="80" near="0.1" wasd-controls-enabled="false" cursor-visible="true" look-controls:"enabled:true"></a-camera>
 
 <!-- Edge Logo -->
       <a-entity id="logo" position="0 0.15 -1" scale=".5 .5 .5">
@@ -37,20 +29,25 @@
 
       <a-entity position="-3.5 1.8 -4" scale=".5 .5 .5" rotation="0 60 0">
 
-        <a-cube width="6" height="1" depth=".05" translate="0 -0.5 0" color="#ED1E79">
-          <a-animation attribute="rotation" from="-90 0 0" to="0 0 0" dur="1000" fill="forwards"></a-animation>
+        <a-cube width="6" height="1" depth=".05" translate="0 -0.5 0" color="#ED1E79" opacity="0.5">
+          <a-animation attribute="rotation" from="-90 0 0" to="0 0 0" dur="1000" fill="forwards" ></a-animation><a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
 
-          <a-cube position="0 -1 0" width="6" height="1" depth=".05" translate="0 -0.5 0" color="#FCEA22">
-            <a-animation attribute="rotation" from="-175 0 0" to="0 0 0" dur="1000" begin="250" fill="both"></a-animation>
+          <a-cube position="0 -1 0" width="6" height="1" depth=".05" translate="0 -0.5 0" color="#FCEA22" opacity="0.5">
+            <a-animation attribute="rotation" from="-175 0 0" to="0 0 0" dur="1000" begin="250" fill="both"></a-animation><a-mouseenter opacity="1"></a-mouseenter>
+           <a-mouseleave opacity="0.5"></a-mouseleave>
 
-            <a-cube position="0 -1 0" width="6" height="1" depth=".05" translate="0 -0.5 0" color="#ED1E79">
-              <a-animation attribute="rotation" from="-180 0 0" to="0 0 0" dur="1000" begin="500" fill="both"></a-animation>
+            <a-cube position="0 -1 0" width="6" height="1" depth=".05" translate="0 -0.5 0" color="#ED1E79" opacity="0.5">
+              <a-animation attribute="rotation" from="-180 0 0" to="0 0 0" dur="1000" begin="500" fill="both"></a-animation><a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
 
-                <a-cube position="0 -1 0" width="6" height="1" depth=".05" translate="0 -0.5 0" color="#FCEA22">
-                  <a-animation attribute="rotation" from="-180 0 0" to="0 0 0" dur="1000" begin="750" fill="both"></a-animation>
+                <a-cube position="0 -1 0" width="6" height="1" depth=".05" translate="0 -0.5 0" color="#FCEA22" opacity="0.5">
+                  <a-animation attribute="rotation" from="-180 0 0" to="0 0 0" dur="1000" begin="750" fill="both"></a-animation><a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
 
-                  <a-cube position="0 -1 0" width="6" height="1" depth=".05" translate="0 -0.5 0" color="#ED1E79">
-                    <a-animation attribute="rotation" from="-180 0 0" to="0 0 0" dur="1000" begin="1000" fill="both"></a-animation>
+                  <a-cube position="0 -1 0" width="6" height="1" depth=".05" translate="0 -0.5 0" color="#ED1E79" opacity="0.5">
+                    <a-animation attribute="rotation" from="-180 0 0" to="0 0 0" dur="1000" begin="1000" fill="both"></a-animation><a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
 
                   </a-cube>
                 </a-cube>
