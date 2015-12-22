@@ -41,7 +41,7 @@ a {
 	margin-left: 10px;
 	line-height: 20pt;
 	letter-spacing: 1px;
-	text-decoration: none;
+	text-decoration: none;	
 }
 
 li {
@@ -91,4 +91,12 @@ li {
 
 }
 
+#container {
+	width: 48px;
+	height: 48px;
 
+}
+
+#container img {
+	width: 100%;
+}
