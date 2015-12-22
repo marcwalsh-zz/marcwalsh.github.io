@@ -12,7 +12,22 @@
 
       <div class="content">
         
-        <img src="/images/edgelogo.png" height="10%">
+        <div id="container">
+            <img src="/images/edgelogo.png" height="10%">
+        </div>
+        
+        <script type="text/javascript">
+            var img = document.getElementById('container').firstchild;
+            img.onload = function() {
+                if (img.height > img.width) {
+                    img.height = '100%';
+                    img.width = 'auto';
+                }
+              }:
+
+          }());
+        </script>
+
         <a href="#">Link 1</a><br>
         <a href="#">Link 2</a><br>
         <a href="#">Link 3</a><br>
