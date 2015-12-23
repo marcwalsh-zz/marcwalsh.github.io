@@ -6,7 +6,7 @@
     <meta name="description" content="Testing VR using AFrame">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="/scripts/aframe.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
   </head>
   <body>
@@ -14,8 +14,8 @@
 <a-scene>
 
 <!-- Camera View-->
-      <a-camera fov="80" near="0.1" wasd-controls-enabled="false" cursor-visible="true" look-controls:"enabled:true"></a-camera>
-
+      <a-entity camera look-controls="enabled: true" wasd-controls="enabled: false">
+        <a-entity position="0 0 -0.5" geometry="primitive: ring; radiusOuter: 0.010; radiusInner: 0.007" material="color: #4CC3D9; shader: flat; transparent: true; opacity: 0.5" cursor="fuse: true; maxDistance: 30; timeout: 500"></a-entity></a-entity>
 <!-- Edge Logo -->
       <a-entity id="logo" position="0 0.15 -1" scale=".5 .5 .5">
 
@@ -81,7 +81,7 @@
     var contact = document.querySelector ('#contact');
 
     document.querySelector('aboutnav').addEventListener('click', function() {
-        ourwork.setAttribute('src', '/about2.png');
+        ourwork.setAttribute('src', 'about2.png');
         services.setAttribute('src', '/images/about3.png');
         theteam.setAttribute('src', '/images/about4.png');
         contact.setAttribute('src', '/images/about5.png');
