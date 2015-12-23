@@ -1,0 +1,51 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Edge Home Page Test</title>
+  <link rel="stylesheet" type="text/css" href="http://marcwalsh.github.io/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">
+    var img = document.getElementById('container').firstchild;
+    img.onload = function() {
+         if (img.height > img.width) {
+        img.height = '100%';
+        img.width = 'auto';
+      }
+    }:
+
+  }());
+</script>
+
+</head>
+<body>
+
+<div id="sidebar">
+
+        <div id="container">
+            <img src="/images/edgelogo.png" height="10%">
+        </div>
+
+        <br>
+        <br>
+
+      <div class="content">
+
+        <a href="#">Link 1</a><br>
+        <a href="#">Link 2</a><br>
+        <a href="#">Link 3</a><br>
+        <a href="#">Link 4</a><br>
+        <a href="#">Link 5</a><br>
+
+
+      </div>
+
+ </div>
+
+
+<!--Below is the iFrame for the Aframe VR Viewer -->
+
+<iframe src="http://marcwalsh.github.io/homevr.html" style="float:right; width:85%; height:100vh; border:0;" allowfullscreen="yes" scrolling="no"> </iframe>
+
+</body>
+</html>
