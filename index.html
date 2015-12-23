@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="/scripts/aframe.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
+    <script src="/scripts/menuviewer.js"></script>
   </head>
   <body>
 
@@ -66,26 +66,9 @@
 		  <a-light type="ambient" color="#fff"></a-light>
 
 <!-- Video and Background -->
-    <a-videosphere src="o2360.mp4" autoplay="true" loop="true"></a-videosphere>
+    <a-videosphere src="/media/o2360.mp4" autoplay="true" loop="true"></a-videosphere>
 		<a-sky color="#000000"></a-sky>
 
     </a-scene>
   </body>
-
-  <script>
-
-    var aboutnav = document.querySelector ('#aboutnav');
-    var ourwork = document.querySelector ('#ourwork');
-    var services = document.querySelector ('#services');
-    var theteam = document.querySelector ('#theteam');
-    var contact = document.querySelector ('#contact');
-
-    document.querySelector('aboutnav').addEventListener('click', function() {
-        ourwork.setAttribute('src', 'about2.png');
-        services.setAttribute('src', '/images/about3.png');
-        theteam.setAttribute('src', '/images/about4.png');
-        contact.setAttribute('src', '/images/about5.png');
-    });
-
-  </script>
 </html>
