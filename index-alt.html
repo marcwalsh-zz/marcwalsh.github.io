@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edge Productions</title>
+    <meta name="description" content="Testing VR using AFrame">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="/scripts/aframe.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  </head>
+  <body>
+
+<a-scene>
+
+<!-- Camera View-->
+      <a-entity camera look-controls="enabled: true" wasd-controls="enabled: false">
+        <a-entity position="0 0 -0.5" geometry="primitive: ring; radiusOuter: 0.010; radiusInner: 0.007" material="color: #4CC3D9; shader: flat; transparent: true; opacity: 0.5" cursor="fuse: true; maxDistance: 30; timeout: 500"></a-entity></a-entity>
+<!-- Edge Logo -->
+      <a-entity id="logo" position="0 0.15 -1" scale=".5 .5 .5">
+
+        <a-image id="webvr" src="/images/edgewhite.png" width="2.02" height="1" opacity="0.75">
+          <a-animation attribute="scale" from="1 0 1" to="0.75 0.75 0.75" begin="1500" dur="200" fill="both" easing="ease-out"></a-animation>
+          <a-animation attribute="position" from="0 -3.5 0" to="0 -0.28 0" begin="1000" dur="1000" fill="both" easing="ease-out"></a-animation>
+        </a-image>
+
+      </a-entity>
+
+<!-- Info Menu -->
+
+      <a-entity position="-3.5 1.25 -4" scale=".5 .5 .5" rotation="0 60 0">
+
+        <a-image id="aboutnav" src="/images/aboutnav.png" width="6" height="1" depth=".05" translate="0 -0.5 0" color="#ED1E79" opacity="0.5">
+          <a-animation attribute="rotation" from="-90 0 0" to="0 0 0" dur="1000" fill="forwards" ></a-animation><a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
+
+          <a-image id="ourwork" src="/images/ourwork.png" position="0 -1 0" width="6" height="1" depth=".05" translate="0 -0.5 0" color="#FCEA22" opacity="0.5">
+            <a-animation attribute="rotation" from="-175 0 0" to="0 0 0" dur="1000" begin="250" fill="both"></a-animation><a-mouseenter opacity="1"></a-mouseenter>
+           <a-mouseleave opacity="0.5"></a-mouseleave>
+
+            <a-image id="services" src="/images/services.png" position="0 -1 0" width="6" height="1" depth=".05" translate="0 -0.5 0" color="#ED1E79" opacity="0.5">
+              <a-animation attribute="rotation" from="-180 0 0" to="0 0 0" dur="1000" begin="500" fill="both"></a-animation><a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
+
+                <a-image id="theteam" src="/images/theteam.png" position="0 -1 0" width="6" height="1" depth=".05" translate="0 -0.5 0" color="#FCEA22" opacity="0.5">
+                  <a-animation attribute="rotation" from="-180 0 0" to="0 0 0" dur="1000" begin="750" fill="both"></a-animation><a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
+
+                  <a-image id="contact" src="/images/contact.png" position="0 -1 0" width="6" height="1" depth=".05" translate="0 -0.5 0" color="#ED1E79" opacity="0.5">
+                    <a-animation attribute="rotation" from="-180 0 0" to="0 0 0" dur="1000" begin="1000" fill="both"></a-animation><a-mouseenter opacity="1"></a-mouseenter>
+        <a-mouseleave opacity="0.5"></a-mouseleave>
+
+                  <a-image id="reset" src="/images/reset.png" position="0 -1 0" width="6" height="1" depth=".05" translate="0 -0.5 0" color="#ED1E79" opacity="0.3">
+                    <a-animation attribute="rotation" from="-180 0 0" to="0 0 0" dur="1000" begin="1000" fill="both"></a-animation><a-mouseenter opacity="0.6"></a-mouseenter>
+        <a-mouseleave opacity="0.3"></a-mouseleave>
+
+                 </a-image>
+              </a-image>
+            </a-image>
+          </a-image>
+         </a-image>
+        </a-image>
+
+      </a-entity>
+
+      <a-entity position="-3.5 -0.4 -.5" scale=".4.8 .4.8 .4.8" rotation="0 60 0">
+
+      <a-image id="infoblock" src="/images/startinfo.png" position="0 1 0" width="6" height="5" depth="0.5"></a-image>
+
+<!-- Lighting -->
+      <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
+		  <a-light type="ambient" color="#fff"></a-light>
+
+<!-- Video and Background -->
+    <a-videosphere src="/media/o2360.mp4" autoplay="true" loop="true"></a-videosphere>
+		<a-sky color="#000000"></a-sky>
+
+    </a-scene>
+  </body>
+<script type="text/javascript">
+var aboutnav = document.querySelector('#aboutnav');
+var ourwork = document.querySelector('#ourwork');
+var services = document.querySelector('#services');
+var theteam = document.querySelector('#theteam');
+var contact = document.querySelector('#contact');
+var reset = document.querySelector('#reset');
+var infoblock = document.querySelector('#infoblock');
+    
+document.querySelector('#aboutnav').addEventListener('click', function() {
+    infoblock.setAttribute('src', '/images/abouttext.png');
+    
+});
+
+</script>
+</html>
