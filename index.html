@@ -84,6 +84,20 @@ document.querySelector('#aboutnav').addEventListener('click', function() {
     
 });
 
+document.querySelector('#ourwork').addEventListener('click', function() {
+    aboutnav.setAttribute('src', 'images/ourwork-01.png');
+    aboutnav.setAttribute('opacity', '1');
+    ourwork.setAttribute('src', '/images/ourwork-02.png');
+    ourwork.setAttribute('opacity', '1');
+    services.setAttribute('src', '/images/ourwork-03.png');
+    services.setAttribute('opacity', '1');
+    theteam.setAttribute('src', '/images/ourwork-04.png');
+    theteam.setAttribute('opacity', '1');
+    contact.setAttribute('src', '/images/ourwork-05.png');
+    contact.setAttribute('opacity', '1');
+    
+});
+
 document.querySelector('#reset').addEventListener('click', function() {
     ourwork.setAttribute('src', '/images/ourwork.png');
     ourwork.setAttribute('opacity', '0.5');
